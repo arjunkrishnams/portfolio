@@ -12,7 +12,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/vinyl-transformed.glb')
+  const { nodes, materials } = useGLTF('./vinyl-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.VinylRecordSgtHolmes_VinylRecordSgtHolmes_0.geometry} material={materials.VinylRecordSgtHolmes} position={[0.081, -0.007, 0.016]} rotation={[-0.29, -0.168, -0.132]} scale={0.025} />

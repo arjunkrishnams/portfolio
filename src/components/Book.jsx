@@ -12,7 +12,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/book-transformed.glb')
+  const { nodes, materials } = useGLTF('./book-transformed.glb')
   return (
     <group {...props}  scale ={10} dispose={null}>
       <mesh geometry={nodes['BookOpen_LP_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-0.181, 0, 0]} rotation={[-Math.PI / 2, 0, 0]} />

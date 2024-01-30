@@ -12,7 +12,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/laptop-transformed.glb')
+  const { nodes, materials } = useGLTF('./laptop-transformed.glb')
   return (
     <group scale={10} {...props} dispose={null}>
       <mesh geometry={nodes.Cube004_Auto_01_0.geometry} material={materials.Auto_01} position={[0, -25.593, 7.313]} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
